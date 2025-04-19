@@ -1,0 +1,206 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #000, #ff0000);
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.8);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff4d4d;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: url('images/neon-car.jpg') no-repeat center center/cover;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 20px rgba(255, 0, 0, 0.6);
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #ff4d4d;
+    text-shadow: 0 0 10px red;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: linear-gradient(to right, #ff4d4d, #ff0000);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: white;
+    color: red;
+}
+
+/* Service Cards */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 10px;
+    background: linear-gradient(to right, #1e1e1e, #000);
+}
+
+.service-card {
+    background: #1e1e1e;
+    color: #fff;
+    width: 320px;
+    padding: 25px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.service-card h3 {
+    margin-top: 15px;
+    font-size: 24px;
+    color: #ff4d4d;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.service-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 35px rgba(255, 0, 0, 0.7);
+}
+
+/* Subtopic Dropdown */
+.subtopic-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 400px
+}
+
+.subtopic-dropdown {
+    display: none;
+    position: center;
+    background: #222;
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.5);
+    border-radius: 5px;
+    z-index: 10;
+    min-width: 150px;
+}
+
+.subtopic-dropdown a {
+    color: #fff;
+    padding: 12px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.subtopic-dropdown a:hover {
+    background: #ff4d4d;
+}
+
+/* Show dropdown on hover */
+.subtopic-container:hover .subtopic-dropdown {
+    display: block;
+}
+
+/* Booking Page Background */
+.booking-container {
+    padding: 50px;
+    background: linear-gradient(to right, #1e1e1e, #000);
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.5);
+    border-radius: 15px;
+
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #ff4d4d;
+}
+
+form input,
+form select,
+form textarea {
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 16px;
+}
+
+form button {
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -5px 15px rgba(255, 0, 0, 0.5);
+}
